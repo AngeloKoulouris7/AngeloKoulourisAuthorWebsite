@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Journal Articles</title>
+   <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <!-- menu header -->
+<div id="header-placeholder"></div>
+<!-- load header -->
+<script>
+  fetch("header.html")
+    .then(res => res.text())
+    .then(html => {
+      document.getElementById("header-placeholder").innerHTML = html;
+    });
+</script>
+  
+  <div class="container2">
+    <h1>Journal Articles</h1>
+    <div class="article-grid">
+      <div class="article-card">
+        <img class="article-image" src="img/parasite.jpg" alt="Parasite Image" />
+        <div class="article-content">
+          <h2 class="article-title"><a href="./essayParasite.html">The Belt of Faith: Parasite Montage Analysis</a></h2>
+          <p class="journal-name">Film Theory</p>
+        </div>
+      </div>
+
+      <div class="article-card">
+        <img class="article-image" src="img/blondes.jpg" alt="Gentlemen Prefer Blondes Image" />
+        <div class="article-content">
+          <h2 class="article-title"><a href="./essayGPB.html">Gentlemen Prefer Blondes Research Essay</a></h2>
+          <p class="journal-name">Film Theory</p>
+        </div>
+      </div>
+
+      <div class="article-card">
+        <img class="article-image" src="img/charlie.jpg" alt="Charlie's Country Image" />
+        <div class="article-content">
+          <h2 class="article-title"><a href="./essayCharlie.html">Key Moment in Australian Cinema: Charlie's Country</a></h2>
+          <p class="journal-name">Cinema and Nation</p>
+        </div>
+      </div>
+
+      <div class="article-card">
+        <img class="article-image" src="img/suspects.jpg" alt="The Usual Suspects Image" />
+        <div class="article-content">
+          <h2 class="article-title"><a href="essaySuspects.html">The Greatest Trick the Devil Ever Pulled...</a></h2>
+          <p class="journal-name">Film Genre</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
